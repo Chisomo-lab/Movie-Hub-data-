@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-3798659133542290">
+    <title>Movie Hub Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3798659133542290" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">🎬 Movie Hub Pro</div>
+        <!-- Search form with button -->
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search videos..." aria-label="Search videos">
+            <button type="submit">🔍</button>
+        </form>
+        <nav>
+            <ul class="nav-links">
+                <li data-category="home" class="active">Home</li>
+                <li data-category="sports">Sports</li>
+                <li data-category="tv">TV</li>
+                <li data-category="movies">Movies</li>
+                <li data-category="cartoons">Cartoons</li>
+                <li data-category="anime">Anime</li>
+                <li data-category="sportstelevision">Sports TV</li> <!-- ✅ new -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="trending" class="horizontal-scroll">
+            <!-- Trending videos inserted here via JS -->
+        </section>
+
+        <section id="home-videos">
+            <!-- Home page videos (4 per category) inserted via JS -->
+        </section>
+
+        <section id="category-videos">
+            <!-- Selected category videos inserted here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© Gabriel Sakala, Kingsley Mudenda, Movie Hub Pro in association with <a href="https://archive.org" target="_blank">Archive.org</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
