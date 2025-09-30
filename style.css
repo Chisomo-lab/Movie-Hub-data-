@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: #111;
+    z-index: 100;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky; /* header sticks at top */
+    top: 0;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Search input */
+#searchInput {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: #222;
+    color: #fff !important;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+#searchInput::placeholder {
+    color: #ccc !important;
+}
+
+/* Nav */
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.nav-links li {
+    cursor: pointer;
+    padding: 8px 15px;
+    background: #222;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+nav ul.nav-links li:hover {
+    background: #333;
+}
+
+nav ul.nav-links li.active {
+    background: red;
+}
+
+/* Main content padding */
+main {
+    padding: 20px 10px 40px 10px;
+}
+
+/* Horizontal scroll for trending */
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+/* Video grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px 0;
+}
+
+/* Special smaller size for Anime category */
+.video-grid.anime .video-card {
+    max-width: 120px;
+}
+
+.video-grid.anime .video-card img {
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Video card styling */
+.video-card {
+    background: #111;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.video-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.video-card img, .video-card video {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.video-card h4 {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.video-card button {
+    margin: 2px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+.video-card button:hover {
+    background: darkred;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    background: #111;
+    font-size: 12px;
+    color: #aaa;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
