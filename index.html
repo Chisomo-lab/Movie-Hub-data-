@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-3798659133542290">
-    <title>Movie Hub Pro</title>
-    <link rel="stylesheet" href="style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3798659133542290" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVerse - Play & Download Free Games</title>
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3798659133542290" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <!-- Logo -->
-        <div class="logo">🎬 Movie Hub Pro</div>
+  <!-- Header -->
+  <header>
+    <div class="logo">🎮 GameVerse</div>
+    <nav>
+      <ul class="nav-links">
+        <li class="active" data-category="home">Home</li>
+        <li data-category="arcade">Arcade</li>
+        <li data-category="rpg">RPG</li>
+        <li data-category="puzzle">Puzzle</li>
+        <li data-category="platformer">Platformers</li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Search bar -->
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Search videos...">
-        </form>
+  <!-- Ad section -->
+  <section class="adsense-ad">
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3798659133542290"
+        data-ad-slot="3491325587"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </section>
 
-        <!-- Navigation -->
-        <nav>
-            <ul class="nav-links">
-                <li data-category="home" class="active">Home</li>
-                <li data-category="sports">Sports</li>
-                <li data-category="sportstelevision">Sports TV</li>
-                <li data-category="tv">TV</li>
-                <li data-category="movies">Movies</li>
-                <li data-category="cartoons">Cartoons</li>
-                <li data-category="anime">Anime</li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Main content -->
+  <main id="game-container"></main>
 
-    <main>
-        <section id="trending" class="horizontal-scroll">
-            <!-- Trending videos inserted here via JS -->
-        </section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 GameVerse. Built by Gabriel Sakala & Kingsley Mudenda.</p>
+    <p>Games embedded from <a href="https://itch.io" target="_blank">Itch.io</a>. All rights reserved to respective creators.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="terms.html">Terms & Conditions</a> | 
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
 
-        <section id="home-videos">
-            <!-- Home page videos (4 per category) inserted via JS -->
-        </section>
-
-        <section id="category-videos">
-            <!-- Selected category videos inserted here -->
-        </section>
-    </main>
-
-    <footer>
-        <p>© Gabriel Sakala & Kingsley Mudenda, Movie Hub Pro. Content courtesy of <a href="https://archive.org" target="_blank">Archive.org</a>.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
